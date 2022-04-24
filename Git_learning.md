@@ -15,20 +15,54 @@
 
    或者：git clone  https://github.com/accountname/repositoryname .git  (速度慢)
 
-2. 分支管理
-
-   - 创建分支：git branch  `name`
-   - 查看分支：git branch 
-   - 创建并切换分支：git checkout -b `branchname`   或    git switch -c `branchname`
-   - 切换分支：git checkout `branchname`      或  git switch `branchname`
-   - 合并分支：git checkout master            git merge `branchname`  
-   - 删除分支：git branch -d `branchname` 
-
 3. 第一次从本地上传文件到GitHub： git push --set-upstream origin `branchname`
 
 3. 常用git命令    http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
 
 
+
+#### git 分支操作
+
+1. 创建分支
+
+   ```
+   创建分支：git branch  `branchname`
+   
+   创建并切换分支：git checkout -b `branchname`   或    git switch -c `branchname`
+   ```
+
+2. 查看分支
+
+   ```
+   查看本地分支：git branch
+   
+   查看远程分支：git branch -r
+   
+   查看所有分支：git branch -a
+   ```
+
+3. 切换分支：git checkout `branchname`   或    git switch `branchname`
+
+4. 合并分支： 
+
+   ```
+   git checkout master      
+   git merge `branchname`
+   
+   git merge b      // 将b分支合并到当前分支
+   ```
+
+5. 删除分支
+
+   ```
+   删除本地分支
+   git branch -d branch_name
+   
+   删除远程分支
+   git push origin -d remote_branch_name
+   ```
+
+   
 
 #### git operation
 

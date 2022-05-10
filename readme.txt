@@ -1,1 +1,2 @@
-this is use to remember daily life!
+this is use to record my learning process
+and some inspiration.

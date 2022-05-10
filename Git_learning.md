@@ -41,12 +41,14 @@
    查看所有分支：git branch -a
    ```
 
+3. 更新远程分支列表： git remote update origin --prune
+
 3. 切换分支：git checkout `branchname`   或    git switch `branchname`
 
 4. 合并分支： 
 
    ```
-   git checkout master      
+   git checkout master
    git merge `branchname`
    
    git merge b      // 将b分支合并到当前分支
